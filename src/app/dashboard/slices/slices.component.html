@@ -1,0 +1,11 @@
+<div *ngFor="let slice of slicesList" >
+    <app-slice-card
+        [id]="slice.id"
+        [start]="slice.start" 
+        [end]="slice.end" 
+        [minstart]="slice.minstart" 
+        [minend]="slice.minend"
+        (btnClicked)="removeSlice(slice.id)"
+        ></app-slice-card>
+</div>
+<app-add-slice-button (btnClicked)="openCreateForm()"></app-add-slice-button>

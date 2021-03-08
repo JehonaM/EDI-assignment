@@ -1,0 +1,14 @@
+.btn {
+    @include element-container;
+    text-align: center;
+    color: $darkgrey;
+    background-color: transparent;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+   &:hover{
+     color: $icon-hover-color;
+   }
+  }
+  
+  

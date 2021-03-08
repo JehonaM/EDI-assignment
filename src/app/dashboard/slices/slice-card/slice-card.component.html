@@ -1,0 +1,27 @@
+<div class="card"  draggable="true">
+    <form action="#">
+        <div class="slice-card">
+            <div class="left-element"> 
+                <label for="id">ID</label>
+                <input type="number" value="{{id}}" name="id">
+            </div>
+            <div class="right-elements">
+                <div>
+                    <label for="id">START</label>
+                    <input type="time" value="{{start}}" name="start" class="mr-25">
+                    <label for="id">END</label>
+                    <input type="time" value="{{end}}" name="end" class="mr-25"> 
+                </div>
+                <div class="inputs-in-percent"> 
+                    <label for="id">MIN START</label>
+                    <input type="number" value="{{minstart}}" name="minstart" class="mr-15">
+                    <label for="id">MIN END</label>
+                    <input type="number" value="{{minend}}" name="minend" class="mr-8">
+                    <i class="fas fa-times-circle" (click)="clicked()"></i>
+                </div>
+               
+            </div>
+            
+        </div>
+    </form>
+</div>

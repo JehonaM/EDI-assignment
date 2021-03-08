@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+//Vendor
+@import "vendor/_vendor-dir";
+
+//Abstracts
+@import "abstracts/_abstracts-dir";
+
+//Base Styles
+@import "base/_base-dir";
+
+//Components
+@import "components/_components-dir";
+
+//Layout
+@import "layouts/_layouts-dir";

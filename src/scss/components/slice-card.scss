@@ -1,0 +1,77 @@
+.slice-card{
+    @include element-container;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    text-align: center;
+
+    label{
+        color: $darkgrey;
+        margin-right: 6px;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    
+    input{
+        width: 75px;
+        outline: none ;
+        border: 1px solid $lightgrey;
+        margin-right: 15px;
+        text-align: right;
+        padding: 3px 4px;
+        border-radius: 3px;
+        color: $mediumgrey;
+        font-size: 0.8rem;
+       
+    }
+    input:focus{
+        outline: none;
+    }
+
+
+}
+
+.right-elements{
+
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    input[type="time"]{
+        min-width: 100px;
+    }
+    label{
+        margin-left: 10px;
+    }
+    .mr-15{
+        margin-right: 15px;
+    }
+
+    .mr-8{
+        margin-right: 8px;
+    }
+    
+    .mr-25{
+        margin-right: 25px;
+    }
+   
+    i{
+        cursor: pointer;
+        color: $darkgrey;
+        &:hover{
+            color: $icon-hover-color;
+            transition: 0.2s;
+        }
+    }
+
+    .inputs-in-percent{
+        margin-left: 30px;
+    }
+}
+
+

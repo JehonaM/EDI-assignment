@@ -1,0 +1,17 @@
+.toolbox{
+    padding: 10px 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: $dashboard-icon-color;
+    cursor: pointer;
+
+}
+
+.btn-group-right {
+    i{
+        margin-left: 40px;
+        font-size: 20px;
+    }
+   
+}

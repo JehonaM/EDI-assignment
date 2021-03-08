@@ -1,0 +1,28 @@
+<h1 *ngIf="isAddMode">Add Slice</h1>
+<h1 *ngIf="!isAddMode">Edit Slice</h1>
+<form [formGroup]="newSliceForm" (ngSubmit)="onSubmit()"  class="form-new-slice">
+  <div class="group-input">
+    <label>Start: </label>
+    <input type="time" formControlName="start">
+ </div>
+
+  <div  class="group-input">
+    <label>End: </label>
+    <input type="time" formControlName="end">
+  </div>
+   
+  <div  class="group-input">
+    <label> Min Start: </label>
+    <input type="number" formControlName="minstart">
+  </div>
+
+  <div  class="group-input">
+    <label>Max End:   </label>
+    <input type="number" formControlName="minend">
+  </div>
+    
+  <div class="btn-box">
+    <button type="submit" [disabled]="!newSliceForm.valid" class="btn-create">Create Slice</button>
+  </div>
+</form>
+

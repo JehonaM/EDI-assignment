@@ -1,0 +1,12 @@
+<div class="box">
+    <span class="label-selcted-channels">Selected Channels</span>
+    <div class="chanels" >
+            <div class="channel-item" *ngFor="let channel of channelsList">
+                <span class="icon-box">
+                    <i class="fas fa-times"></i>
+                </span>
+                {{channel.name}}
+            </div>
+            <span class="btn-add-channel"><i class="fas fa-plus"></i></span>
+    </div>
+</div>

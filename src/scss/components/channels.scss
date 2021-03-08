@@ -1,0 +1,72 @@
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem; 
+    align-items: center; 
+    font-size: 14px;
+}
+
+.label-selcted-channels{
+    width: 13%;
+    
+}
+
+.chanels{
+    display: flex;
+    width: 87%;
+    padding: 2px 6px; 
+    border: 1px solid $lightgrey;
+    border-radius: 2px;
+    font-size: 12px;
+    align-items: center;
+        
+    .channel-item {
+        display: inline-block;
+        min-width: 40px;
+        border: 1px solid transparent; 
+        border-radius: 30px;
+        background-color: $grey;
+        padding: 5px 10px;
+        color: $white;
+        margin-right: 5px;
+        .icon-box{
+            display: inline-block;
+            margin-right: 5px;
+            
+            cursor: pointer;
+        }
+
+      
+    }
+    .channel-item:nth-child(1){
+        background-color: $yellow;
+    }
+    .channel-item:nth-child(2){
+        background-color: $red;
+    }
+    .channel-item:nth-child(3){
+        background-color: $purple;
+    }
+    .channel-item:nth-child(4){
+        background-color: $blue;
+    }
+    .channel-item:nth-child(5){
+        background-color: $green;
+    }
+
+    .btn-add-channel{
+        width: 35px;
+        height: 35px;
+        border: 1px solid $lightgrey;
+        line-height: 35px;
+        text-align: center;
+        background-color: $grey-bg-color;
+        font-size: 20px;
+        color: $white;
+        border-radius: 6px;
+        margin-left: 5px;
+        box-shadow: 2px 2px 2px 0 $grey;
+        cursor: pointer;
+    }
+            
+}
